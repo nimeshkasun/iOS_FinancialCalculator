@@ -1,0 +1,78 @@
+
+/* Class = "UILabel"; text = "No of Payments Per Year"; ObjectID = "0Pg-ZA-Su3"; */
+"0Pg-ZA-Su3.text" = "No of Payments Per Year";
+
+/* Class = "UILabel"; text = "Interest"; ObjectID = "4tV-KU-crY"; */
+"4tV-KU-crY.text" = "Interest";
+
+/* Class = "UILabel"; text = "Present Value"; ObjectID = "8sw-rp-DtG"; */
+"8sw-rp-DtG.text" = "Present Value";
+
+/* Class = "UIButton"; normalTitle = "CALCULATE"; ObjectID = "BZW-eJ-QFy"; */
+"BZW-eJ-QFy.normalTitle" = "CALCULATE";
+
+/* Class = "UIButton"; normalTitle = "CALCULATE"; ObjectID = "Cy8-07-bub"; */
+"Cy8-07-bub.normalTitle" = "CALCULATE";
+
+/* Class = "UISegmentedControl"; JRL-BJ-yUE.segmentTitles[0] = "Beginning"; ObjectID = "JRL-BJ-yUE"; */
+"JRL-BJ-yUE.segmentTitles[0]" = "Beginning";
+
+/* Class = "UISegmentedControl"; JRL-BJ-yUE.segmentTitles[1] = "End"; ObjectID = "JRL-BJ-yUE"; */
+"JRL-BJ-yUE.segmentTitles[1]" = "End";
+
+/* Class = "UILabel"; text = "---Regular Contributions (Optional)---"; ObjectID = "Kye-Th-hJo"; */
+"Kye-Th-hJo.text" = "---Regular Contributions (Optional)---";
+
+/* Class = "UILabel"; text = "Compounds Per Year"; ObjectID = "MHc-ke-UIY"; */
+"MHc-ke-UIY.text" = "Compounds Per Year";
+
+/* Class = "UILabel"; text = "Interest (%)"; ObjectID = "NOQ-nl-hef"; */
+"NOQ-nl-hef.text" = "Interest (%)";
+
+/* Class = "UILabel"; text = "Loan Amount"; ObjectID = "NPX-jc-se8"; */
+"NPX-jc-se8.text" = "Loan Amount";
+
+/* Class = "UILabel"; text = "Present Value"; ObjectID = "OLk-zm-w1Q"; */
+"OLk-zm-w1Q.text" = "Present Value";
+
+/* Class = "UILabel"; text = "Interest (%)"; ObjectID = "PRR-sQ-The"; */
+"PRR-sQ-The.text" = "Interest (%)";
+
+/* Class = "UILabel"; text = "Payment"; ObjectID = "VWH-Uo-KjK"; */
+"VWH-Uo-KjK.text" = "Payment";
+
+/* Class = "UIButton"; normalTitle = "CALCULATE"; ObjectID = "VYw-S1-fzU"; */
+"VYw-S1-fzU.normalTitle" = "CALCULATE";
+
+/* Class = "UILabel"; text = "No of Payments Per Year"; ObjectID = "Wah-hj-zUr"; */
+"Wah-hj-zUr.text" = "No of Payments Per Year";
+
+/* Class = "UILabel"; text = "Compounds Per Year"; ObjectID = "WrR-my-cAk"; */
+"WrR-my-cAk.text" = "Compounds Per Year";
+
+/* Class = "UILabel"; text = "Future Value"; ObjectID = "Zw9-rn-Sek"; */
+"Zw9-rn-Sek.text" = "Future Value";
+
+/* Class = "UILabel"; text = "Payment Made At"; ObjectID = "abe-mj-2Dd"; */
+"abe-mj-2Dd.text" = "Payment Made At";
+
+/* Class = "UILabel"; text = "Welcome!"; ObjectID = "ghq-yB-hBV"; */
+"ghq-yB-hBV.text" = "Welcome!";
+
+/* Class = "UILabel"; text = "Financial Calculator App"; ObjectID = "jba-UG-A4z"; */
+"jba-UG-A4z.text" = "Financial Calculator App";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "jpc-af-Pbl"; */
+"jpc-af-Pbl.text" = "Label";
+
+/* Class = "UILabel"; text = "Payment"; ObjectID = "nXM-eP-uwR"; */
+"nXM-eP-uwR.text" = "Payment";
+
+/* Class = "UILabel"; text = "Future Value"; ObjectID = "r55-Dw-6yu"; */
+"r55-Dw-6yu.text" = "Future Value";
+
+/* Class = "UILabel"; text = "Payment"; ObjectID = "vZA-ax-cTC"; */
+"vZA-ax-cTC.text" = "Payment";
+
+/* Class = "UILabel"; text = "No of Years"; ObjectID = "vrK-PQ-yX1"; */
+"vrK-PQ-yX1.text" = "No of Years";
