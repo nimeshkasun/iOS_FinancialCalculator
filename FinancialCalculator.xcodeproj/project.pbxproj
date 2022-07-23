@@ -27,6 +27,11 @@
 		813CD2E72889318D006D49CC /* SavingHelpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 813CD2E62889318D006D49CC /* SavingHelpViewController.swift */; };
 		813CD2E9288932DF006D49CC /* MortgageHelpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 813CD2E8288932DF006D49CC /* MortgageHelpViewController.swift */; };
 		813CD2EB288933D4006D49CC /* LoanHelpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 813CD2EA288933D4006D49CC /* LoanHelpViewController.swift */; };
+		81DC86BA288BF2A500B1D2BA /* HomeButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81DC86B9288BF2A500B1D2BA /* HomeButton.swift */; };
+		81DC86BD288BF33F00B1D2BA /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81DC86BC288BF33F00B1D2BA /* Colors.swift */; };
+		81DC86BF288BF3CE00B1D2BA /* UITextFields.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81DC86BE288BF3CE00B1D2BA /* UITextFields.swift */; };
+		81DC86C1288BF4DC00B1D2BA /* HelpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81DC86C0288BF4DC00B1D2BA /* HelpViewController.swift */; };
+		81DC86C3288BF54B00B1D2BA /* ScrollViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81DC86C2288BF54B00B1D2BA /* ScrollViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -71,6 +76,11 @@
 		813CD2E62889318D006D49CC /* SavingHelpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SavingHelpViewController.swift; sourceTree = "<group>"; };
 		813CD2E8288932DF006D49CC /* MortgageHelpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MortgageHelpViewController.swift; sourceTree = "<group>"; };
 		813CD2EA288933D4006D49CC /* LoanHelpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoanHelpViewController.swift; sourceTree = "<group>"; };
+		81DC86B9288BF2A500B1D2BA /* HomeButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeButton.swift; sourceTree = "<group>"; };
+		81DC86BC288BF33F00B1D2BA /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
+		81DC86BE288BF3CE00B1D2BA /* UITextFields.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITextFields.swift; sourceTree = "<group>"; };
+		81DC86C0288BF4DC00B1D2BA /* HelpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelpViewController.swift; sourceTree = "<group>"; };
+		81DC86C2288BF54B00B1D2BA /* ScrollViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -123,6 +133,8 @@
 		813042102887CE34002370D2 /* FinancialCalculator */ = {
 			isa = PBXGroup;
 			children = (
+				81DC86BB288BF32800B1D2BA /* Extensions */,
+				81DC86B8288BF29300B1D2BA /* Model */,
 				813CD2DF28892A31006D49CC /* Utils */,
 				813042422887CE66002370D2 /* ViewControllers */,
 				813042432887D1C9002370D2 /* View */,
@@ -172,6 +184,8 @@
 				813CD2E62889318D006D49CC /* SavingHelpViewController.swift */,
 				813CD2E8288932DF006D49CC /* MortgageHelpViewController.swift */,
 				813CD2EA288933D4006D49CC /* LoanHelpViewController.swift */,
+				81DC86C0288BF4DC00B1D2BA /* HelpViewController.swift */,
+				81DC86C2288BF54B00B1D2BA /* ScrollViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -190,6 +204,23 @@
 				813CD2E028892A49006D49CC /* CommonFunctions.swift */,
 			);
 			path = Utils;
+			sourceTree = "<group>";
+		};
+		81DC86B8288BF29300B1D2BA /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				81DC86B9288BF2A500B1D2BA /* HomeButton.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		81DC86BB288BF32800B1D2BA /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				81DC86BC288BF33F00B1D2BA /* Colors.swift */,
+				81DC86BE288BF3CE00B1D2BA /* UITextFields.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -332,10 +363,15 @@
 				813CD2E72889318D006D49CC /* SavingHelpViewController.swift in Sources */,
 				813042492887D652002370D2 /* MortgageViewController.swift in Sources */,
 				813CD2E328892AA2006D49CC /* SavingsData+CoreDataClass.swift in Sources */,
+				81DC86BD288BF33F00B1D2BA /* Colors.swift in Sources */,
 				8130424B2887D85D002370D2 /* LoanViewController.swift in Sources */,
+				81DC86BF288BF3CE00B1D2BA /* UITextFields.swift in Sources */,
 				813042142887CE34002370D2 /* SceneDelegate.swift in Sources */,
+				81DC86C1288BF4DC00B1D2BA /* HelpViewController.swift in Sources */,
 				813CD2E9288932DF006D49CC /* MortgageHelpViewController.swift in Sources */,
 				813042472887D49E002370D2 /* TabBarController.swift in Sources */,
+				81DC86BA288BF2A500B1D2BA /* HomeButton.swift in Sources */,
+				81DC86C3288BF54B00B1D2BA /* ScrollViewController.swift in Sources */,
 				813042452887D1F1002370D2 /* HomeButtonView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
