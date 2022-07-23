@@ -27,6 +27,7 @@
 		813CD2E72889318D006D49CC /* SavingHelpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 813CD2E62889318D006D49CC /* SavingHelpViewController.swift */; };
 		813CD2E9288932DF006D49CC /* MortgageHelpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 813CD2E8288932DF006D49CC /* MortgageHelpViewController.swift */; };
 		813CD2EB288933D4006D49CC /* LoanHelpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 813CD2EA288933D4006D49CC /* LoanHelpViewController.swift */; };
+		81DA778B288C028F00005A26 /* FinanceCalculator.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 81DA7789288C028F00005A26 /* FinanceCalculator.xcdatamodeld */; };
 		81DC86BA288BF2A500B1D2BA /* HomeButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81DC86B9288BF2A500B1D2BA /* HomeButton.swift */; };
 		81DC86BD288BF33F00B1D2BA /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81DC86BC288BF33F00B1D2BA /* Colors.swift */; };
 		81DC86BF288BF3CE00B1D2BA /* UITextFields.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81DC86BE288BF3CE00B1D2BA /* UITextFields.swift */; };
@@ -76,6 +77,7 @@
 		813CD2E62889318D006D49CC /* SavingHelpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SavingHelpViewController.swift; sourceTree = "<group>"; };
 		813CD2E8288932DF006D49CC /* MortgageHelpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MortgageHelpViewController.swift; sourceTree = "<group>"; };
 		813CD2EA288933D4006D49CC /* LoanHelpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoanHelpViewController.swift; sourceTree = "<group>"; };
+		81DA778A288C028F00005A26 /* FinanceCalculator.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = FinanceCalculator.xcdatamodel; sourceTree = "<group>"; };
 		81DC86B9288BF2A500B1D2BA /* HomeButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeButton.swift; sourceTree = "<group>"; };
 		81DC86BC288BF33F00B1D2BA /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
 		81DC86BE288BF3CE00B1D2BA /* UITextFields.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITextFields.swift; sourceTree = "<group>"; };
@@ -143,6 +145,7 @@
 				813042132887CE34002370D2 /* SceneDelegate.swift */,
 				8130421A2887CE35002370D2 /* Assets.xcassets */,
 				8130421F2887CE35002370D2 /* Info.plist */,
+				81DA7789288C028F00005A26 /* FinanceCalculator.xcdatamodeld */,
 			);
 			path = FinancialCalculator;
 			sourceTree = "<group>";
@@ -167,8 +170,8 @@
 		813042412887CE55002370D2 /* Storyboards */ = {
 			isa = PBXGroup;
 			children = (
-				813042172887CE34002370D2 /* Main.storyboard */,
 				8130421C2887CE35002370D2 /* LaunchScreen.storyboard */,
+				813042172887CE34002370D2 /* Main.storyboard */,
 			);
 			path = Storyboards;
 			sourceTree = "<group>";
@@ -358,6 +361,7 @@
 				813CD2EB288933D4006D49CC /* LoanHelpViewController.swift in Sources */,
 				813CD2DE288929C3006D49CC /* SavingsViewController.swift in Sources */,
 				813CD2E528892AD1006D49CC /* SavingsData+CoreDataProperties.swift in Sources */,
+				81DA778B288C028F00005A26 /* FinanceCalculator.xcdatamodeld in Sources */,
 				813042162887CE34002370D2 /* MainViewController.swift in Sources */,
 				813042122887CE34002370D2 /* AppDelegate.swift in Sources */,
 				813CD2E72889318D006D49CC /* SavingHelpViewController.swift in Sources */,
@@ -560,12 +564,12 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 2.0;
 				PRODUCT_BUNDLE_IDENTIFIER = w1867890.FinancialCalculator;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -587,12 +591,12 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 2.0;
 				PRODUCT_BUNDLE_IDENTIFIER = w1867890.FinancialCalculator;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -708,6 +712,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		81DA7789288C028F00005A26 /* FinanceCalculator.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				81DA778A288C028F00005A26 /* FinanceCalculator.xcdatamodel */,
+			);
+			currentVersion = 81DA778A288C028F00005A26 /* FinanceCalculator.xcdatamodel */;
+			path = FinanceCalculator.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 813042062887CE34002370D2 /* Project object */;
 }
