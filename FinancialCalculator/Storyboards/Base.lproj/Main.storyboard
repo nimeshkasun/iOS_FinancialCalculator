@@ -3,6 +3,7 @@
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="collection view cell content view" minToolsVersion="11.0"/>
@@ -310,6 +311,7 @@
                                         </constraints>
                                     </stackView>
                                 </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <constraints>
                                     <constraint firstAttribute="trailing" secondItem="yfx-7W-bh3" secondAttribute="trailing" id="5xp-e5-mia"/>
                                     <constraint firstItem="Glb-MU-5EE" firstAttribute="bottom" secondItem="yfx-7W-bh3" secondAttribute="bottom" constant="20" id="BqR-Qe-zbh"/>
@@ -368,7 +370,7 @@
                             </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="JiE-bn-4uV"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstAttribute="trailing" secondItem="ccQ-7I-kqB" secondAttribute="trailing" id="YQj-aq-Yuv"/>
                             <constraint firstItem="ccQ-7I-kqB" firstAttribute="width" secondItem="Kbi-hb-T35" secondAttribute="width" id="h7S-B2-aAb"/>
@@ -412,7 +414,7 @@
                             </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="BfQ-YI-lEU"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstAttribute="trailing" secondItem="uQC-qv-w1p" secondAttribute="trailing" id="777-x2-6t5"/>
                             <constraint firstItem="uQC-qv-w1p" firstAttribute="top" secondItem="BfQ-YI-lEU" secondAttribute="top" id="GaI-RC-tgm"/>
@@ -437,59 +439,59 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="zAj-kW-BnO">
-                                <rect key="frame" x="20" y="64" width="374" height="362"/>
+                                <rect key="frame" x="20" y="64" width="374" height="402"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Loan Amount" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NPX-jc-se8" userLabel="Loan Amount L">
                                         <rect key="frame" x="0.0" y="0.0" width="374" height="16.5"/>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="14"/>
-                                        <color key="textColor" red="0.16862745100000001" green="0.51372549020000002" blue="0.83529411760000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="textColor" systemColor="systemOrangeColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" clearButtonMode="always" translatesAutoresizingMaskIntoConstraints="NO" id="DZX-nc-aqY" userLabel="Loan Amount">
-                                        <rect key="frame" x="0.0" y="31.5" width="374" height="34"/>
+                                        <rect key="frame" x="0.0" y="36.5" width="374" height="34"/>
                                         <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="17"/>
                                         <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
                                     </textField>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Interest" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4tV-KU-crY" userLabel="Interest L">
-                                        <rect key="frame" x="0.0" y="80.5" width="374" height="16.5"/>
+                                        <rect key="frame" x="0.0" y="90.5" width="374" height="16.5"/>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="14"/>
-                                        <color key="textColor" red="0.16862745100000001" green="0.51372549020000002" blue="0.83529411760000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="textColor" systemColor="systemOrangeColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" clearButtonMode="always" translatesAutoresizingMaskIntoConstraints="NO" id="jqV-Op-cVg" userLabel="Interest">
-                                        <rect key="frame" x="0.0" y="112" width="374" height="34"/>
+                                        <rect key="frame" x="0.0" y="127" width="374" height="34"/>
                                         <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="17"/>
                                         <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
                                     </textField>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Payment" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vZA-ax-cTC" userLabel="Payment L">
-                                        <rect key="frame" x="0.0" y="161" width="374" height="16.5"/>
+                                        <rect key="frame" x="0.0" y="181" width="374" height="16.5"/>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="14"/>
-                                        <color key="textColor" red="0.16862745100000001" green="0.51372549020000002" blue="0.83529411760000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="textColor" systemColor="systemOrangeColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" clearButtonMode="always" translatesAutoresizingMaskIntoConstraints="NO" id="8jY-c3-v30" userLabel="Payment">
-                                        <rect key="frame" x="0.0" y="192.5" width="374" height="34"/>
+                                        <rect key="frame" x="0.0" y="217.5" width="374" height="34"/>
                                         <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="17"/>
                                         <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
                                     </textField>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="No of Years" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vrK-PQ-yX1" userLabel="No of Years L">
-                                        <rect key="frame" x="0.0" y="241.5" width="374" height="16.5"/>
+                                        <rect key="frame" x="0.0" y="271.5" width="374" height="16.5"/>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="14"/>
-                                        <color key="textColor" red="0.16862745100000001" green="0.51372549020000002" blue="0.83529411760000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="textColor" systemColor="systemOrangeColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" clearButtonMode="always" translatesAutoresizingMaskIntoConstraints="NO" id="ln7-8F-0yG" userLabel="No of Years">
-                                        <rect key="frame" x="0.0" y="273" width="374" height="34"/>
+                                        <rect key="frame" x="0.0" y="308" width="374" height="34"/>
                                         <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="17"/>
                                         <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
                                     </textField>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VYw-S1-fzU">
-                                        <rect key="frame" x="0.0" y="322" width="374" height="40"/>
-                                        <color key="backgroundColor" red="0.16862745100000001" green="0.51372549020000002" blue="0.83529411760000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <rect key="frame" x="0.0" y="362" width="374" height="40"/>
+                                        <color key="backgroundColor" systemColor="systemOrangeColor"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="40" id="WVn-VU-Wr6"/>
                                         </constraints>
@@ -500,10 +502,20 @@
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" systemColor="tertiarySystemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstItem="vZA-ax-cTC" firstAttribute="top" secondItem="jqV-Op-cVg" secondAttribute="bottom" constant="20" id="3Cd-gI-Rmv"/>
+                                    <constraint firstItem="vrK-PQ-yX1" firstAttribute="top" secondItem="8jY-c3-v30" secondAttribute="bottom" constant="20" id="DGG-i8-SgS"/>
+                                    <constraint firstItem="ln7-8F-0yG" firstAttribute="top" secondItem="vrK-PQ-yX1" secondAttribute="bottom" constant="10" id="FwN-xP-qPi"/>
+                                    <constraint firstItem="8jY-c3-v30" firstAttribute="top" secondItem="vZA-ax-cTC" secondAttribute="bottom" constant="10" id="Kue-Vb-Npi"/>
+                                    <constraint firstItem="4tV-KU-crY" firstAttribute="top" secondItem="DZX-nc-aqY" secondAttribute="bottom" constant="20" id="VkH-sc-dyh"/>
+                                    <constraint firstItem="DZX-nc-aqY" firstAttribute="top" secondItem="NPX-jc-se8" secondAttribute="bottom" constant="10" id="Wob-i5-4Yy"/>
+                                    <constraint firstItem="VYw-S1-fzU" firstAttribute="top" secondItem="ln7-8F-0yG" secondAttribute="bottom" constant="20" id="ggh-DH-tQJ"/>
+                                    <constraint firstItem="jqV-Op-cVg" firstAttribute="top" secondItem="4tV-KU-crY" secondAttribute="bottom" constant="10" id="yhD-pR-cq8"/>
+                                </constraints>
                             </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="JOU-Fo-Pqd"/>
-                        <color key="backgroundColor" systemColor="tertiarySystemBackgroundColor"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="zAj-kW-BnO" firstAttribute="leading" secondItem="JOU-Fo-Pqd" secondAttribute="leading" constant="20" id="OqI-D8-pb7"/>
                             <constraint firstItem="zAj-kW-BnO" firstAttribute="top" secondItem="JOU-Fo-Pqd" secondAttribute="top" constant="20" id="hAY-5k-hec"/>
@@ -532,83 +544,83 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="GP1-R0-7vx">
-                                <rect key="frame" x="20" y="64" width="374" height="523"/>
+                                <rect key="frame" x="20" y="64" width="374" height="583"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Present Value" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OLk-zm-w1Q" userLabel="Present Value L">
                                         <rect key="frame" x="0.0" y="0.0" width="374" height="16.5"/>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="14"/>
-                                        <color key="textColor" red="0.16862745100000001" green="0.51372549020000002" blue="0.83529411760000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="textColor" name="AccentColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" clearButtonMode="always" translatesAutoresizingMaskIntoConstraints="NO" id="AQe-KG-8wR" userLabel="Present Value">
-                                        <rect key="frame" x="0.0" y="31.5" width="374" height="34"/>
+                                        <rect key="frame" x="0.0" y="36.5" width="374" height="34"/>
                                         <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="17"/>
                                         <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
                                     </textField>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Future Value" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="r55-Dw-6yu" userLabel="Future Value L ">
-                                        <rect key="frame" x="0.0" y="80.5" width="374" height="16.5"/>
+                                        <rect key="frame" x="0.0" y="90.5" width="374" height="16.5"/>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="14"/>
-                                        <color key="textColor" red="0.16862745100000001" green="0.51372549020000002" blue="0.83529411760000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="textColor" name="AccentColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" clearButtonMode="always" translatesAutoresizingMaskIntoConstraints="NO" id="26X-Hw-s27" userLabel="Future Value">
-                                        <rect key="frame" x="0.0" y="112" width="374" height="34"/>
+                                        <rect key="frame" x="0.0" y="127" width="374" height="34"/>
                                         <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="17"/>
                                         <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
                                     </textField>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Interest (%)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PRR-sQ-The" userLabel="Interest L">
-                                        <rect key="frame" x="0.0" y="161" width="374" height="16.5"/>
+                                        <rect key="frame" x="0.0" y="181" width="374" height="16.5"/>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="14"/>
-                                        <color key="textColor" red="0.16862745100000001" green="0.51372549020000002" blue="0.83529411760000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="textColor" name="AccentColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" clearButtonMode="always" translatesAutoresizingMaskIntoConstraints="NO" id="y7B-Rc-21c" userLabel="Interest">
-                                        <rect key="frame" x="0.0" y="192.5" width="374" height="34"/>
+                                        <rect key="frame" x="0.0" y="217.5" width="374" height="34"/>
                                         <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="17"/>
                                         <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
                                     </textField>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="No of Payments Per Year" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wah-hj-zUr" userLabel="No of Payments L">
-                                        <rect key="frame" x="0.0" y="241.5" width="374" height="16.5"/>
+                                        <rect key="frame" x="0.0" y="271.5" width="374" height="16.5"/>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="14"/>
-                                        <color key="textColor" red="0.16862745100000001" green="0.51372549020000002" blue="0.83529411760000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="textColor" name="AccentColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" clearButtonMode="always" translatesAutoresizingMaskIntoConstraints="NO" id="SNS-Tl-qr7" userLabel="No of Payments">
-                                        <rect key="frame" x="0.0" y="273" width="374" height="34"/>
+                                        <rect key="frame" x="0.0" y="308" width="374" height="34"/>
                                         <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="17"/>
                                         <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
                                     </textField>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Compounds Per Year" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WrR-my-cAk" userLabel="Compounds L">
-                                        <rect key="frame" x="0.0" y="322" width="374" height="16.5"/>
+                                        <rect key="frame" x="0.0" y="362" width="374" height="16.5"/>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="14"/>
-                                        <color key="textColor" red="0.16862745100000001" green="0.51372549020000002" blue="0.83529411760000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="textColor" name="AccentColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" clearButtonMode="always" translatesAutoresizingMaskIntoConstraints="NO" id="NuL-kG-C6h" userLabel="Compounds">
-                                        <rect key="frame" x="0.0" y="353.5" width="374" height="34"/>
+                                        <rect key="frame" x="0.0" y="398.5" width="374" height="34"/>
                                         <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="17"/>
                                         <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
                                     </textField>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Payment" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nXM-eP-uwR" userLabel="Payment L">
-                                        <rect key="frame" x="0.0" y="402.5" width="374" height="16.5"/>
+                                        <rect key="frame" x="0.0" y="452.5" width="374" height="16.5"/>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="14"/>
-                                        <color key="textColor" red="0.16862745100000001" green="0.51372549020000002" blue="0.83529411760000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="textColor" name="AccentColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" clearButtonMode="always" translatesAutoresizingMaskIntoConstraints="NO" id="4fj-E3-XDG" userLabel="Payment">
-                                        <rect key="frame" x="0.0" y="434" width="374" height="34"/>
+                                        <rect key="frame" x="0.0" y="489" width="374" height="34"/>
                                         <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="17"/>
                                         <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
                                     </textField>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Cy8-07-bub">
-                                        <rect key="frame" x="0.0" y="483" width="374" height="40"/>
-                                        <color key="backgroundColor" red="0.16862745100000001" green="0.51372549020000002" blue="0.83529411760000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <rect key="frame" x="0.0" y="543" width="374" height="40"/>
+                                        <color key="backgroundColor" name="AccentColor"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="40" id="pAu-B0-9VL"/>
                                         </constraints>
@@ -619,10 +631,24 @@
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="r55-Dw-6yu" firstAttribute="top" secondItem="AQe-KG-8wR" secondAttribute="bottom" constant="20" id="6nL-7J-iRm"/>
+                                    <constraint firstItem="PRR-sQ-The" firstAttribute="top" secondItem="26X-Hw-s27" secondAttribute="bottom" constant="20" id="9iN-G8-Yox"/>
+                                    <constraint firstItem="Cy8-07-bub" firstAttribute="top" secondItem="4fj-E3-XDG" secondAttribute="bottom" constant="20" id="Bvw-Ae-WRC"/>
+                                    <constraint firstItem="4fj-E3-XDG" firstAttribute="top" secondItem="nXM-eP-uwR" secondAttribute="bottom" constant="10" id="HKz-Es-d1G"/>
+                                    <constraint firstItem="y7B-Rc-21c" firstAttribute="top" secondItem="PRR-sQ-The" secondAttribute="bottom" constant="10" id="NQm-xo-Nze"/>
+                                    <constraint firstItem="AQe-KG-8wR" firstAttribute="top" secondItem="OLk-zm-w1Q" secondAttribute="bottom" constant="10" id="Pj2-84-0U6"/>
+                                    <constraint firstItem="SNS-Tl-qr7" firstAttribute="top" secondItem="Wah-hj-zUr" secondAttribute="bottom" constant="10" id="dDa-i5-Agz"/>
+                                    <constraint firstItem="WrR-my-cAk" firstAttribute="top" secondItem="SNS-Tl-qr7" secondAttribute="bottom" constant="20" id="hLg-Ry-0wm"/>
+                                    <constraint firstItem="nXM-eP-uwR" firstAttribute="top" secondItem="NuL-kG-C6h" secondAttribute="bottom" constant="20" id="r7n-yS-9LE"/>
+                                    <constraint firstItem="26X-Hw-s27" firstAttribute="top" secondItem="r55-Dw-6yu" secondAttribute="bottom" constant="10" id="sX4-Qf-pNB"/>
+                                    <constraint firstItem="NuL-kG-C6h" firstAttribute="top" secondItem="WrR-my-cAk" secondAttribute="bottom" constant="10" id="uNL-oN-q2t"/>
+                                    <constraint firstItem="Wah-hj-zUr" firstAttribute="top" secondItem="y7B-Rc-21c" secondAttribute="bottom" constant="20" id="z5j-xs-isJ"/>
+                                </constraints>
                             </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Wuc-Qh-Hkh"/>
-                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="GP1-R0-7vx" firstAttribute="leading" secondItem="Wuc-Qh-Hkh" secondAttribute="leading" constant="20" id="3Of-Fd-YQZ"/>
                             <constraint firstItem="GP1-R0-7vx" firstAttribute="top" secondItem="Wuc-Qh-Hkh" secondAttribute="top" constant="20" id="PGN-tD-Vzu"/>
@@ -652,84 +678,84 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="szs-QM-Htr">
-                                <rect key="frame" x="20" y="64" width="374" height="674.5"/>
+                                <rect key="frame" x="20" y="64" width="374" height="718"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Present Value" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8sw-rp-DtG" userLabel="Present Value L">
                                         <rect key="frame" x="0.0" y="0.0" width="374" height="16.5"/>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="14"/>
-                                        <color key="textColor" red="0.16862745100000001" green="0.51372549020000002" blue="0.83529411760000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="textColor" name="AccentColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" clearButtonMode="always" translatesAutoresizingMaskIntoConstraints="NO" id="TQH-8M-olR" userLabel="Present Value">
-                                        <rect key="frame" x="0.0" y="31.5" width="374" height="34"/>
+                                        <rect key="frame" x="0.0" y="36.5" width="374" height="34"/>
                                         <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="17"/>
                                         <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
                                     </textField>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Future Value" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zw9-rn-Sek" userLabel="Future Value L ">
-                                        <rect key="frame" x="0.0" y="80.5" width="374" height="16.5"/>
+                                        <rect key="frame" x="0.0" y="90.5" width="374" height="16.5"/>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="14"/>
-                                        <color key="textColor" red="0.16862745100000001" green="0.51372549020000002" blue="0.83529411760000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="textColor" name="AccentColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" clearButtonMode="always" translatesAutoresizingMaskIntoConstraints="NO" id="L34-Q0-PST" userLabel="Future Value">
-                                        <rect key="frame" x="0.0" y="112" width="374" height="34"/>
+                                        <rect key="frame" x="0.0" y="127" width="374" height="34"/>
                                         <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="17"/>
                                         <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
                                     </textField>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Interest (%)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NOQ-nl-hef" userLabel="Interest L">
-                                        <rect key="frame" x="0.0" y="161" width="374" height="16.5"/>
+                                        <rect key="frame" x="0.0" y="181" width="374" height="16.5"/>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="14"/>
-                                        <color key="textColor" red="0.16862745100000001" green="0.51372549020000002" blue="0.83529411760000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="textColor" name="AccentColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" clearButtonMode="always" translatesAutoresizingMaskIntoConstraints="NO" id="iEH-9n-ggx" userLabel="Interest">
-                                        <rect key="frame" x="0.0" y="192.5" width="374" height="34"/>
+                                        <rect key="frame" x="0.0" y="217.5" width="374" height="34"/>
                                         <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="17"/>
                                         <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
                                     </textField>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="No of Payments Per Year" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0Pg-ZA-Su3" userLabel="No of Payments L">
-                                        <rect key="frame" x="0.0" y="241.5" width="374" height="16.5"/>
+                                        <rect key="frame" x="0.0" y="271.5" width="374" height="16.5"/>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="14"/>
-                                        <color key="textColor" red="0.16862745100000001" green="0.51372549020000002" blue="0.83529411760000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="textColor" name="AccentColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" clearButtonMode="always" translatesAutoresizingMaskIntoConstraints="NO" id="T3e-DQ-LZq" userLabel="No of Payments">
-                                        <rect key="frame" x="0.0" y="273" width="374" height="34"/>
+                                        <rect key="frame" x="0.0" y="308" width="374" height="34"/>
                                         <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="17"/>
                                         <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
                                     </textField>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Compounds Per Year" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MHc-ke-UIY" userLabel="Compounds L">
-                                        <rect key="frame" x="0.0" y="322" width="374" height="16.5"/>
+                                        <rect key="frame" x="0.0" y="362" width="374" height="16.5"/>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="14"/>
-                                        <color key="textColor" red="0.16862745100000001" green="0.51372549020000002" blue="0.83529411760000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="textColor" name="AccentColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" clearButtonMode="always" translatesAutoresizingMaskIntoConstraints="NO" id="Syt-Wu-m0b" userLabel="Compounds">
-                                        <rect key="frame" x="0.0" y="353.5" width="374" height="34"/>
+                                        <rect key="frame" x="0.0" y="398.5" width="374" height="34"/>
                                         <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="17"/>
                                         <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
                                     </textField>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="---Regular Contributions (Optional)---" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kye-Th-hJo">
-                                        <rect key="frame" x="0.0" y="402.5" width="374" height="14"/>
+                                        <rect key="frame" x="0.0" y="452.5" width="374" height="14"/>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <fontDescription key="fontDescription" name="Helvetica-Oblique" family="Helvetica" pointSize="12"/>
                                         <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Payment" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VWH-Uo-KjK" userLabel="Payment L">
-                                        <rect key="frame" x="0.0" y="431.5" width="374" height="16.5"/>
+                                        <rect key="frame" x="0.0" y="486.5" width="374" height="16.5"/>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="14"/>
-                                        <color key="textColor" red="0.16862745100000001" green="0.51372549020000002" blue="0.83529411760000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="textColor" name="AccentColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="MFx-RU-1hj">
-                                        <rect key="frame" x="0.0" y="463" width="374" height="34"/>
+                                        <rect key="frame" x="0.0" y="523" width="374" height="34"/>
                                         <subviews>
                                             <segmentedControl opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="pk8-Fe-I4f">
                                                 <rect key="frame" x="0.0" y="0.0" width="60" height="35"/>
@@ -748,15 +774,8 @@
                                             </textField>
                                         </subviews>
                                     </stackView>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Payment Made At" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="abe-mj-2Dd" userLabel="PMT Made L">
-                                        <rect key="frame" x="0.0" y="512" width="374" height="16.5"/>
-                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="14"/>
-                                        <color key="textColor" red="0.16862745100000001" green="0.51372549020000002" blue="0.83529411760000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
                                     <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="1" translatesAutoresizingMaskIntoConstraints="NO" id="JRL-BJ-yUE">
-                                        <rect key="frame" x="0.0" y="543.5" width="374" height="32"/>
+                                        <rect key="frame" x="0.0" y="577" width="374" height="32"/>
                                         <color key="backgroundColor" systemColor="systemGray6Color"/>
                                         <segments>
                                             <segment title="Beginning"/>
@@ -768,8 +787,8 @@
                                         </connections>
                                     </segmentedControl>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BZW-eJ-QFy">
-                                        <rect key="frame" x="0.0" y="589.5" width="374" height="40"/>
-                                        <color key="backgroundColor" red="0.16862745100000001" green="0.51372549020000002" blue="0.83529411760000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <rect key="frame" x="0.0" y="628" width="374" height="40"/>
+                                        <color key="backgroundColor" name="AccentColor"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="40" id="TV0-hP-4tC"/>
                                         </constraints>
@@ -782,7 +801,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="trailing" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="t0s-af-nlP">
-                                        <rect key="frame" x="0.0" y="644.5" width="374" height="30"/>
+                                        <rect key="frame" x="0.0" y="688" width="374" height="30"/>
                                         <fontDescription key="fontDescription" name="Helvetica-BoldOblique" family="Helvetica" pointSize="15"/>
                                         <state key="normal" title="View Amortized Data"/>
                                         <connections>
@@ -791,10 +810,26 @@
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="NOQ-nl-hef" firstAttribute="top" secondItem="L34-Q0-PST" secondAttribute="bottom" constant="20" id="F6Y-HE-AHm"/>
+                                    <constraint firstItem="Zw9-rn-Sek" firstAttribute="top" secondItem="TQH-8M-olR" secondAttribute="bottom" constant="20" id="FI9-24-cgj"/>
+                                    <constraint firstItem="TQH-8M-olR" firstAttribute="top" secondItem="8sw-rp-DtG" secondAttribute="bottom" constant="10" id="GZC-OK-wbh"/>
+                                    <constraint firstItem="L34-Q0-PST" firstAttribute="top" secondItem="Zw9-rn-Sek" secondAttribute="bottom" constant="10" id="KgX-zs-XFu"/>
+                                    <constraint firstItem="VWH-Uo-KjK" firstAttribute="top" secondItem="Kye-Th-hJo" secondAttribute="bottom" constant="20" id="LnR-Rh-Lp2"/>
+                                    <constraint firstItem="Syt-Wu-m0b" firstAttribute="top" secondItem="MHc-ke-UIY" secondAttribute="bottom" constant="10" id="MrM-r5-4fk"/>
+                                    <constraint firstItem="MFx-RU-1hj" firstAttribute="top" secondItem="VWH-Uo-KjK" secondAttribute="bottom" constant="10" id="QNV-Fs-hIv"/>
+                                    <constraint firstItem="BZW-eJ-QFy" firstAttribute="top" secondItem="JRL-BJ-yUE" secondAttribute="bottom" constant="20" id="a4T-vy-Imp"/>
+                                    <constraint firstItem="iEH-9n-ggx" firstAttribute="top" secondItem="NOQ-nl-hef" secondAttribute="bottom" constant="10" id="drC-6i-eVU"/>
+                                    <constraint firstItem="t0s-af-nlP" firstAttribute="top" secondItem="BZW-eJ-QFy" secondAttribute="bottom" constant="20" id="nin-UG-yw5"/>
+                                    <constraint firstItem="MHc-ke-UIY" firstAttribute="top" secondItem="T3e-DQ-LZq" secondAttribute="bottom" constant="20" id="qFI-KU-kSr"/>
+                                    <constraint firstItem="T3e-DQ-LZq" firstAttribute="top" secondItem="0Pg-ZA-Su3" secondAttribute="bottom" constant="10" id="vKL-db-VOL"/>
+                                    <constraint firstItem="0Pg-ZA-Su3" firstAttribute="top" secondItem="iEH-9n-ggx" secondAttribute="bottom" constant="20" id="wge-Lb-zsx"/>
+                                    <constraint firstItem="Kye-Th-hJo" firstAttribute="top" secondItem="Syt-Wu-m0b" secondAttribute="bottom" constant="20" id="xHT-kY-pLr"/>
+                                </constraints>
                             </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="kxn-il-yzo"/>
-                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="kxn-il-yzo" firstAttribute="trailing" secondItem="szs-QM-Htr" secondAttribute="trailing" constant="20" id="7zF-uD-VJt"/>
                             <constraint firstItem="szs-QM-Htr" firstAttribute="top" secondItem="kxn-il-yzo" secondAttribute="top" constant="20" id="Ys6-nt-35d"/>
@@ -907,6 +942,9 @@
         <image name="LoanMain" width="173.5" height="173.5"/>
         <image name="MortgageMain" width="173.5" height="173.5"/>
         <image name="SavingsMain" width="173.5" height="173.5"/>
+        <namedColor name="AccentColor">
+            <color red="0.0" green="0.46000000000000002" blue="0.89000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
         <systemColor name="linkColor">
             <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
@@ -915,6 +953,9 @@
         </systemColor>
         <systemColor name="systemGray6Color">
             <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemOrangeColor">
+            <color red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="tertiarySystemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
