@@ -19,6 +19,5 @@ class LoanHelpViewController: UIViewController {
     func setUpUI()
     {
            self.view.backgroundColor = UIColor.backgroundColor()
-           self.helpTitle.text = NSLocalizedString("loan", comment: "")
     }
 }

@@ -34,9 +34,9 @@ class TabBarController: UITabBarController {
         self.view.backgroundColor = UIColor.backgroundColor()
 
         // set tab bar items programatically
-        let mortgageItem = UITabBarItem(title: NSLocalizedString("mortgage", comment: ""), image: UIImage(named: "MortgageLine.png"), selectedImage: UIImage(named: "MortgageFill.png"))
-        let savingsItem = UITabBarItem(title: NSLocalizedString("savings", comment: ""),image: UIImage(named: "SavingsLine.png"), selectedImage: UIImage(named: "SavingsFill.png"))
-        let loanItem = UITabBarItem(title: NSLocalizedString("loan", comment: ""),image: UIImage(named: "LoansLine.png"), selectedImage: UIImage(named: "LoansFill.png"))
+        let mortgageItem = UITabBarItem(title: NSLocalizedString("Mortgage", comment: ""), image: UIImage(named: "MortgageLine.png"), selectedImage: UIImage(named: "MortgageFill.png"))
+        let savingsItem = UITabBarItem(title: NSLocalizedString("Savings", comment: ""),image: UIImage(named: "SavingsLine.png"), selectedImage: UIImage(named: "SavingsFill.png"))
+        let loanItem = UITabBarItem(title: NSLocalizedString("Loan", comment: ""),image: UIImage(named: "LoansLine.png"), selectedImage: UIImage(named: "LoansFill.png"))
         
         // view controllers are embedded in a parent which has a scrollview - ScrollViewController
         let storyboard = UIStoryboard(name: "Main", bundle: nil)

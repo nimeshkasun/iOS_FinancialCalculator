@@ -44,26 +44,26 @@ class MainViewController: UIViewController {
     {
         onOrientationChange()
         prepareButtons()
-        animations()
+        //animations()
         self.view.backgroundColor = UIColor.backgroundColor()
     }
     
     // prepare main view buttons
     func prepareButtons()
     {
-        buttonList.append(HomeButton(title: NSLocalizedString("savings", comment: ""),photoName: "SavingsMain.png"))
-        buttonList.append(HomeButton(title: NSLocalizedString("mortgage", comment: ""),photoName: "MortgageMain.png"))
-        buttonList.append(HomeButton(title: NSLocalizedString("loan", comment: ""),photoName: "LoanMain.png"))
-        buttonList.append(HomeButton(title: NSLocalizedString("help", comment: ""),photoName: "HelpMain.png"))
+        buttonList.append(HomeButton(title: NSLocalizedString("SAVINGS", comment: ""),photoName: "SavingsMain.png"))
+        buttonList.append(HomeButton(title: NSLocalizedString("MORTGAGE", comment: ""),photoName: "MortgageMain.png"))
+        buttonList.append(HomeButton(title: NSLocalizedString("LOAN", comment: ""),photoName: "LoanMain.png"))
+        buttonList.append(HomeButton(title: NSLocalizedString("HELP", comment: ""),photoName: "HelpMain.png"))
     }
     
-    func animations()
+    /*func animations()
     {
         self.welcomeMsg.alpha = 0
         UIView.animate(withDuration: 1, delay:1.0, animations: {
                self.welcomeMsg.alpha = 1
         }, completion: nil)
-    }
+    }*/
 
     // remove header background radius for landscape views
     func onOrientationChange()
@@ -91,17 +91,17 @@ extension MainViewController: UICollectionViewDataSource {
     }
 
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "ButtonIdentifier", for: indexPath) as! HomeButtonView
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "CallIdentifier", for: indexPath) as! HomeButtonView
         cell.title.text = buttonList[indexPath.row].title
         cell.image.image = UIImage(named: buttonList[indexPath.row].photoName)!
         
         //simple animation for cells. alpha 0 to 1.
-        cell.alpha = 0
+        /*cell.alpha = 0
         cell.transform = CGAffineTransform(scaleX: 0.1, y: 0.1)
         UIView.animate(withDuration: 1, delay:1.0, animations: {
                 cell.alpha = 1
                 cell.transform = .identity
-        }, completion: nil)
+        }, completion: nil)*/
         return cell
     }
 }

@@ -22,8 +22,6 @@ class SavingHelpViewController: UIViewController {
     // custom methods
     func setUpUI()
     {
-        self.view.backgroundColor = UIColor.backgroundColor()
-        self.helpTitle.text = NSLocalizedString("savings", comment: "")
-        self.desc.text = NSLocalizedString("savingsHelp", comment: "")
+        self.view.backgroundColor = UIColor.backgroundColor()        
     }
 }

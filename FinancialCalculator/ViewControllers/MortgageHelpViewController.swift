@@ -19,7 +19,6 @@ class MortgageHelpViewController: UIViewController {
     func setUpUI()
     {
         self.view.backgroundColor = UIColor.backgroundColor()
-        self.helpTitle.text = NSLocalizedString("mortgage", comment: "")
 
     }
 }
