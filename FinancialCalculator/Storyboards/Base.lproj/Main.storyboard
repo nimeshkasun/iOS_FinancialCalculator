@@ -268,7 +268,7 @@
                 <pageViewController storyboardIdentifier="helpVC" autoresizesArchivedViewToFullSize="NO" transitionStyle="scroll" navigationOrientation="horizontal" spineLocation="none" id="4Fb-4O-qgN" customClass="HelpViewController" customModule="FinancialCalculator" customModuleProvider="target" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Dfn-9Y-a3H" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-991" y="2030"/>
+            <point key="canvasLocation" x="-2604" y="1625"/>
         </scene>
         <!--Saving Help View Controller-->
         <scene sceneID="ecG-zP-2c8">
@@ -310,7 +310,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9Rb-XR-o16" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-72" y="2029"/>
+            <point key="canvasLocation" x="-1801" y="1625"/>
         </scene>
         <!--Mortgage Help View Controller-->
         <scene sceneID="v6t-uS-Gqb">
@@ -354,7 +354,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="RgQ-lr-IsR" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="800" y="2025"/>
+            <point key="canvasLocation" x="-991" y="1625"/>
         </scene>
         <!--Loan Help View Controller-->
         <scene sceneID="nGW-tW-FFl">
@@ -398,7 +398,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vuX-hH-yMz" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1651" y="2029"/>
+            <point key="canvasLocation" x="-194" y="1625"/>
         </scene>
         <!--Mortgage Controller-->
         <scene sceneID="ul7-g3-b3k">
@@ -884,7 +884,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="DY5-Sj-HLq" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-194" y="833"/>
+            <point key="canvasLocation" x="-194" y="840"/>
         </scene>
         <!--Amortized Data Controller-->
         <scene sceneID="WHc-M2-msq">
@@ -967,7 +967,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1a1-Ca-K48" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="622" y="832"/>
+            <point key="canvasLocation" x="622" y="840"/>
         </scene>
     </scenes>
     <color key="tintColor" systemColor="linkColor"/>
