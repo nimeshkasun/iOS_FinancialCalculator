@@ -21,7 +21,7 @@
 		813042492887D652002370D2 /* MortgageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 813042482887D652002370D2 /* MortgageViewController.swift */; };
 		8130424B2887D85D002370D2 /* LoanViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8130424A2887D85D002370D2 /* LoanViewController.swift */; };
 		813CD2DE288929C3006D49CC /* SavingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 813CD2DD288929C3006D49CC /* SavingsViewController.swift */; };
-		813CD2E128892A49006D49CC /* CommonFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 813CD2E028892A49006D49CC /* CommonFunctions.swift */; };
+		813CD2E128892A49006D49CC /* SharedFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 813CD2E028892A49006D49CC /* SharedFunctions.swift */; };
 		813CD2E328892AA2006D49CC /* SavingsData+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 813CD2E228892AA2006D49CC /* SavingsData+CoreDataClass.swift */; };
 		813CD2E528892AD1006D49CC /* SavingsData+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 813CD2E428892AD1006D49CC /* SavingsData+CoreDataProperties.swift */; };
 		813CD2E72889318D006D49CC /* SavingHelpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 813CD2E62889318D006D49CC /* SavingHelpViewController.swift */; };
@@ -71,7 +71,7 @@
 		813042482887D652002370D2 /* MortgageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MortgageViewController.swift; sourceTree = "<group>"; };
 		8130424A2887D85D002370D2 /* LoanViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoanViewController.swift; sourceTree = "<group>"; };
 		813CD2DD288929C3006D49CC /* SavingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SavingsViewController.swift; sourceTree = "<group>"; };
-		813CD2E028892A49006D49CC /* CommonFunctions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonFunctions.swift; sourceTree = "<group>"; };
+		813CD2E028892A49006D49CC /* SharedFunctions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SharedFunctions.swift; sourceTree = "<group>"; };
 		813CD2E228892AA2006D49CC /* SavingsData+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SavingsData+CoreDataClass.swift"; sourceTree = "<group>"; };
 		813CD2E428892AD1006D49CC /* SavingsData+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SavingsData+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		813CD2E62889318D006D49CC /* SavingHelpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SavingHelpViewController.swift; sourceTree = "<group>"; };
@@ -204,7 +204,7 @@
 		813CD2DF28892A31006D49CC /* Utils */ = {
 			isa = PBXGroup;
 			children = (
-				813CD2E028892A49006D49CC /* CommonFunctions.swift */,
+				813CD2E028892A49006D49CC /* SharedFunctions.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -357,7 +357,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				813CD2E128892A49006D49CC /* CommonFunctions.swift in Sources */,
+				813CD2E128892A49006D49CC /* SharedFunctions.swift in Sources */,
 				813CD2EB288933D4006D49CC /* LoanHelpViewController.swift in Sources */,
 				813CD2DE288929C3006D49CC /* SavingsViewController.swift in Sources */,
 				813CD2E528892AD1006D49CC /* SavingsData+CoreDataProperties.swift in Sources */,

@@ -24,7 +24,7 @@ class SavingsViewController: UIViewController {
     
     // variables
     let defaults = UserDefaults.standard
-    let commonFunctions = CommonFunctions()
+    let sharedFunctions = SharedFunctions()
     var noOfPayments: Double = 0
     var futureValue: Double = 0
     var presentValue: Double = 0
@@ -115,8 +115,8 @@ class SavingsViewController: UIViewController {
 
         if let value = Double(field.text!) {
             field.tag = 1
-            let formattedVal  = commonFunctions.getFormattedDecimalDouble(value: value)
-            field.text = commonFunctions.getFormattedDecimalString(value: formattedVal)
+            let formattedVal  = sharedFunctions.getFormattedAsDouble(value: value)
+            field.text = sharedFunctions.getFormattedAsString(value: formattedVal)
             field.clear()
             return formattedVal
         } else {
@@ -208,7 +208,7 @@ class SavingsViewController: UIViewController {
          let a =  noOfCompounds * noOfPayments
          let b =   1 + (interestRate/noOfCompounds)
          presentValue = futureValue / pow(b,a)
-         presentValueTF.text = commonFunctions.getFormattedDecimalString(value: presentValue)
+         presentValueTF.text = sharedFunctions.getFormattedAsString(value: presentValue)
          presentValueTF.answerDetected()
      }
     
@@ -217,7 +217,7 @@ class SavingsViewController: UIViewController {
         let a =  1 / (noOfCompounds * noOfPayments)
         let b =  futureValue / presentValue
         interestRate = (pow(b,a) - 1) * noOfCompounds * 100
-        interestTF.text = commonFunctions.getFormattedDecimalString(value: interestRate)
+        interestTF.text = sharedFunctions.getFormattedAsString(value: interestRate)
         interestTF.answerDetected()
     }
     
@@ -226,7 +226,7 @@ class SavingsViewController: UIViewController {
         let a =  log(futureValue / presentValue)
         let b =   log(1 + (interestRate/noOfCompounds)) * noOfCompounds
         noOfPayments = a/b
-        noOfPaymentsTF.text = commonFunctions.getFormattedDecimalString(value: noOfPayments)
+        noOfPaymentsTF.text = sharedFunctions.getFormattedAsString(value: noOfPayments)
         noOfPaymentsTF.answerDetected()
     }
     
@@ -248,8 +248,8 @@ class SavingsViewController: UIViewController {
             }
         }
         
-        paymentTF.text = commonFunctions.getFormattedDecimalString(value: payment)
-        futureValueTF.text = commonFunctions.getFormattedDecimalString(value: futureValue)
+        paymentTF.text = sharedFunctions.getFormattedAsString(value: payment)
+        futureValueTF.text = sharedFunctions.getFormattedAsString(value: futureValue)
         futureValueTF.answerDetected()
 
     }
@@ -286,7 +286,7 @@ class SavingsViewController: UIViewController {
         {
             finalAnswer = futureValueOfSeries / (c * b)
         }
-        paymentTF.text = commonFunctions.getFormattedDecimalString(value: finalAnswer)
+        paymentTF.text = sharedFunctions.getFormattedAsString(value: finalAnswer)
         paymentTF.answerDetected()
     }
  
