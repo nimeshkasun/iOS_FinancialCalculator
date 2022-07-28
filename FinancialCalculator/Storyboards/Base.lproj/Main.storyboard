@@ -649,6 +649,9 @@
                                                 <state key="normal" title="CALCULATE">
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
+                                                <connections>
+                                                    <action selector="DidClickCalculate:" destination="Z4k-gV-h7x" eventType="touchUpInside" id="wkE-0d-SVQ"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                     </stackView>
@@ -666,12 +669,12 @@
                     </view>
                     <connections>
                         <outlet property="calcButton" destination="Cy8-07-bub" id="mJr-E3-9Zs"/>
-                        <outlet property="futureValTF" destination="26X-Hw-s27" id="nmC-6l-rYQ"/>
-                        <outlet property="interestTF" destination="y7B-Rc-21c" id="zho-VB-f5V"/>
-                        <outlet property="noOFCompoundsTF" destination="NuL-kG-C6h" id="hGU-us-FAu"/>
-                        <outlet property="noOfPaymentsTF" destination="SNS-Tl-qr7" id="fuH-5G-KUf"/>
-                        <outlet property="paymentTF" destination="4fj-E3-XDG" id="ugB-8E-RiG"/>
-                        <outlet property="presentValTF" destination="AQe-KG-8wR" id="0AP-tG-YKg"/>
+                        <outlet property="futureValField" destination="26X-Hw-s27" id="6GP-QI-mN6"/>
+                        <outlet property="interestField" destination="y7B-Rc-21c" id="qk9-JU-Mky"/>
+                        <outlet property="noOfCompoundsField" destination="NuL-kG-C6h" id="bkn-xJ-8zb"/>
+                        <outlet property="noOfPaymentsField" destination="SNS-Tl-qr7" id="L6U-80-FjE"/>
+                        <outlet property="paymentField" destination="4fj-E3-XDG" id="s6J-uh-8ZQ"/>
+                        <outlet property="presentValField" destination="AQe-KG-8wR" id="JYJ-Gn-wZl"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yz1-i9-EAi" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -943,7 +946,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="DY5-Sj-HLq" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-194.20289855072465" y="839.73214285714278"/>
+            <point key="canvasLocation" x="-194" y="832"/>
         </scene>
         <!--Amortized Data Controller-->
         <scene sceneID="WHc-M2-msq">
@@ -1026,7 +1029,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1a1-Ca-K48" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="622" y="840"/>
+            <point key="canvasLocation" x="617" y="832"/>
         </scene>
     </scenes>
     <color key="tintColor" systemColor="linkColor"/>

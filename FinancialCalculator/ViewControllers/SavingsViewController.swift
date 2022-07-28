@@ -48,10 +48,10 @@ class SavingsViewController: UIViewController {
     }
 
     override func viewWillAppear(_ animated: Bool) {
-        navigationController?.navigationBar.topItem!.title = NSLocalizedString("savings", comment: "")
+        navigationController?.navigationBar.topItem!.title = NSLocalizedString("Savings", comment: "")
         
         // add clear all button
-        let clearItem = UIBarButtonItem(title: NSLocalizedString("clear", comment: ""), style: .plain, target: self, action:#selector(clearSavings(sender:)))
+        let clearItem = UIBarButtonItem(title: NSLocalizedString("Clear", comment: ""), style: .plain, target: self, action:#selector(clearSavings(sender:)))
         self.navigationController?.navigationBar.topItem!.rightBarButtonItem = clearItem
     }
     
