@@ -8,7 +8,7 @@
 import UIKit
 
 class HelpViewController: UIPageViewController {
-
+    
     // variables
     var orderedViewControllers = [UIViewController]()
     var currentIndex:Int = 0
@@ -24,7 +24,7 @@ class HelpViewController: UIPageViewController {
     func setUpUI()
     {
         self.view.backgroundColor = UIColor.backgroundColor()
-
+        
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
         
         orderedViewControllers.append(storyboard.instantiateViewController(withIdentifier:"savingsHelpVC"))
@@ -41,19 +41,19 @@ class HelpViewController: UIPageViewController {
         
     }
     
-
+    
 }
 
 extension HelpViewController : UIPageViewControllerDelegate{
-
+    
     func presentationIndex(for pageViewController: UIPageViewController) -> Int {
-      return 0
+        return 0
     }
     
     func presentationCount(for pageViewController: UIPageViewController) -> Int {
         return orderedViewControllers.count
     }
-  
+    
 }
 
 // extensions
@@ -65,17 +65,17 @@ extension HelpViewController : UIPageViewControllerDataSource{
         guard let index = orderedViewControllers.firstIndex(of: viewController), index > 0 else {
             return nil
         }
-
+        
         return orderedViewControllers[index - 1]
     }
     
     func pageViewController(_ pageViewController: UIPageViewController,
                             viewControllerAfter viewController: UIViewController) -> UIViewController? {
-    
+        
         guard let index = orderedViewControllers.firstIndex(of: viewController), index + 1 < orderedViewControllers.count else {
             return nil
         }
-
+        
         return orderedViewControllers[index + 1]
     }
 }

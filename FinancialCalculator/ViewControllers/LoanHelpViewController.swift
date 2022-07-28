@@ -8,7 +8,7 @@
 import UIKit
 
 class LoanHelpViewController: UIViewController {
-
+    
     @IBOutlet weak var helpTitle: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -18,6 +18,6 @@ class LoanHelpViewController: UIViewController {
     // custom methods
     func setUpUI()
     {
-           self.view.backgroundColor = UIColor.backgroundColor()
+        self.view.backgroundColor = UIColor.backgroundColor()
     }
 }

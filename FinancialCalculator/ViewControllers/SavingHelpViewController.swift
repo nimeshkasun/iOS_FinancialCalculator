@@ -8,7 +8,7 @@
 import UIKit
 
 class SavingHelpViewController: UIViewController {
-
+    
     // outlets
     @IBOutlet weak var helpTitle: UILabel!
     @IBOutlet weak var desc: UILabel!

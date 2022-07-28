@@ -12,16 +12,16 @@ extension UITextField: UITextFieldDelegate {
     private struct AssociatedKeys {
         static var customTag = "customTag"
     }
-
+    
     var customTag: String! {
         get {
             guard let placeholder = objc_getAssociatedObject(self, &AssociatedKeys.customTag) as? String else {
                 return String()
             }
-
+            
             return placeholder
         }
-
+        
         set(value) {
             objc_setAssociatedObject(self, &AssociatedKeys.customTag, value, objc_AssociationPolicy.OBJC_ASSOCIATION_RETAIN_NONATOMIC)
         }
@@ -29,8 +29,8 @@ extension UITextField: UITextFieldDelegate {
     
     // delegate methods
     public func textFieldShouldClear(_ textField: UITextField) -> Bool {
-           clear()
-           return true;
+        clear()
+        return true;
     }
     
     public func textFieldDidBeginEditing(_ textField: UITextField) {
@@ -50,7 +50,7 @@ extension UITextField: UITextFieldDelegate {
         self.layer.borderColor = UIColor.red.cgColor
         self.layer.borderWidth = 0.5
         self.layer.cornerRadius = 5;
-
+        
         let shake: CABasicAnimation = CABasicAnimation(keyPath: "position")
         shake.duration = 0.1
         shake.repeatCount = 2
@@ -69,7 +69,7 @@ extension UITextField: UITextFieldDelegate {
     // when we found an answer we color it to green and shake
     func answerDetected() {
         UserDefaults.standard.set(self.text, forKey: self.customTag!)
-
+        
         self.layer.borderColor = UIColor.green.cgColor
         self.layer.borderWidth = 0.5
         self.layer.cornerRadius = 5;

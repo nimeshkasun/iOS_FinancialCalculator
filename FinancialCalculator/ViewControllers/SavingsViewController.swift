@@ -10,7 +10,7 @@ import Foundation
 import CoreData
 
 class SavingsViewController: UIViewController {
-
+    
     // outlets
     @IBOutlet weak var presentValueTF: UITextField!
     @IBOutlet weak var futureValueTF: UITextField!
@@ -35,7 +35,7 @@ class SavingsViewController: UIViewController {
     var savingsData : SavingsData?
     var context: NSManagedObjectContext? {
         guard let appDelegate =
-        UIApplication.shared.delegate as? AppDelegate else {
+                UIApplication.shared.delegate as? AppDelegate else {
             return nil
         }
         return appDelegate.persistentContainer.viewContext
@@ -46,7 +46,7 @@ class SavingsViewController: UIViewController {
         setUpUI()
         viewStoredData()
     }
-
+    
     override func viewWillAppear(_ animated: Bool) {
         navigationController?.navigationBar.topItem!.title = NSLocalizedString("Savings", comment: "")
         
@@ -75,7 +75,7 @@ class SavingsViewController: UIViewController {
         initTextField(field: noOfCompoundsTF, key: "SNoOfCompounds")
         
         calcButton.layer.cornerRadius = 18
-
+        
         // restore data from userdefaults
         if defaults.object(forKey: "SPMTMadeAt") != nil
         {
@@ -93,7 +93,7 @@ class SavingsViewController: UIViewController {
         
         // on item change we store the data in userdefaults
         field.addTarget(self, action: #selector(textFieldDidChange(sender:)), for: .editingChanged)
-
+        
         // restore data from userdefaults
         field.text = defaults.string(forKey: key)
     }
@@ -109,10 +109,10 @@ class SavingsViewController: UIViewController {
         noOfCompounds = prepareEachValue(field: noOfCompoundsTF)
         isPMTEnd = pmtMadeAtSC.selectedSegmentIndex == 1 ? true : false
     }
-
+    
     func prepareEachValue(field: UITextField) -> Double
     {
-
+        
         if let value = Double(field.text!) {
             field.tag = 1
             let formattedVal  = sharedFunctions.getFormattedAsDouble(value: value)
@@ -133,7 +133,7 @@ class SavingsViewController: UIViewController {
         
         // store calculation method in a variable
         var functionToPerform : (() -> ())?
-
+        
         // we need to perform the calculation on empty field
         if(presentValueTF.tag == 0)
         {
@@ -171,11 +171,11 @@ class SavingsViewController: UIViewController {
         else if(emptyTF.count == 1)
         {
             interestRate = interestRate/100 //0.50
-
+            
             //calculate future value based on PMT
             if(futureValue == 0)
             {
-               calculateFutureValue()
+                calculateFutureValue()
             }
             else
             {
@@ -204,13 +204,13 @@ class SavingsViewController: UIViewController {
     // calculations
     
     func calculatePresentValue()
-     {
-         let a =  noOfCompounds * noOfPayments
-         let b =   1 + (interestRate/noOfCompounds)
-         presentValue = futureValue / pow(b,a)
-         presentValueTF.text = sharedFunctions.getFormattedAsString(value: presentValue)
-         presentValueTF.answerDetected()
-     }
+    {
+        let a =  noOfCompounds * noOfPayments
+        let b =   1 + (interestRate/noOfCompounds)
+        presentValue = futureValue / pow(b,a)
+        presentValueTF.text = sharedFunctions.getFormattedAsString(value: presentValue)
+        presentValueTF.answerDetected()
+    }
     
     func calculateInterest()
     {
@@ -251,16 +251,16 @@ class SavingsViewController: UIViewController {
         paymentTF.text = sharedFunctions.getFormattedAsString(value: payment)
         futureValueTF.text = sharedFunctions.getFormattedAsString(value: futureValue)
         futureValueTF.answerDetected()
-
+        
     }
     
-
+    
     func calculateFutureValueofSeriesEnd(a: Double, b: Double) -> Double
     {
         let answer: Double = payment * ((pow(b,a) - 1)/(interestRate/noOfCompounds))
         return answer
     }
-
+    
     func calculateFutureValueofSeriesBegining(a: Double, b: Double) -> Double
     {
         let answer: Double = calculateFutureValueofSeriesEnd(a: a, b: b) * b
@@ -277,7 +277,7 @@ class SavingsViewController: UIViewController {
         
         let futureValueOfSeries: Double = futureValue - (pow(b,a) * presentValue)
         var finalAnswer: Double = 0
-
+        
         if(isPMTEnd)
         {
             finalAnswer = futureValueOfSeries / c
@@ -289,12 +289,12 @@ class SavingsViewController: UIViewController {
         paymentTF.text = sharedFunctions.getFormattedAsString(value: finalAnswer)
         paymentTF.answerDetected()
     }
- 
+    
     func displayAlert()
     {
-         let alert = UIAlertController(title: "Alert", message: "Please leave one of the values blank to perform the calculation", preferredStyle: .alert)
-         alert.addAction(UIAlertAction(title: "OK", style: .default))
-         self.present(alert, animated: true, completion: nil)
+        let alert = UIAlertController(title: "Alert", message: "Please leave one of the values blank to perform the calculation", preferredStyle: .alert)
+        alert.addAction(UIAlertAction(title: "OK", style: .default))
+        self.present(alert, animated: true, completion: nil)
     }
     
     @objc func clearSavings(sender: UIBarButtonItem)
@@ -323,7 +323,7 @@ class SavingsViewController: UIViewController {
     // saving old calculations
     func storeCalculatedData()
     {
-
+        
         let pmtMadeAt : Int16 = Int16(pmtMadeAtSC.selectedSegmentIndex)
         let id = String(NSDate().timeIntervalSince1970)
         
@@ -331,10 +331,10 @@ class SavingsViewController: UIViewController {
         
         do
         {
-                try self.context?.save()
+            try self.context?.save()
         }
         catch let error as NSError {
-                print("Could not save. \(error), \(error.userInfo)")
+            print("Could not save. \(error), \(error.userInfo)")
         }
     }
     
@@ -345,21 +345,21 @@ class SavingsViewController: UIViewController {
         {
             let savingData = try self.context?.fetch(request) as! [SavingsData]
             if(savingData.count > 0 ){
-            
-                savingData.forEach {savingDataObj in
                 
-                     print("--------------------------")
-                     print("Id",savingDataObj.id ?? "")
-                     print("Present Value",savingDataObj.presentValue)
-                     print("Future Value",savingDataObj.futureValue)
-                     print("Interest Value",savingDataObj.interest)
-                     print("Compunds perYear",savingDataObj.compundsPerYear)
-                     print("Payments PerYear",savingDataObj.paymentsPerYear)
-                     print("Payment",savingDataObj.payment)
-                     print("Payment Made At",savingDataObj.paymentMadeAt)
+                savingData.forEach {savingDataObj in
+                    
+                    print("--------------------------")
+                    print("Id",savingDataObj.id ?? "")
+                    print("Present Value",savingDataObj.presentValue)
+                    print("Future Value",savingDataObj.futureValue)
+                    print("Interest Value",savingDataObj.interest)
+                    print("Compunds perYear",savingDataObj.compundsPerYear)
+                    print("Payments PerYear",savingDataObj.paymentsPerYear)
+                    print("Payment",savingDataObj.payment)
+                    print("Payment Made At",savingDataObj.paymentMadeAt)
                 }
- 
-
+                
+                
             }
             else
             {

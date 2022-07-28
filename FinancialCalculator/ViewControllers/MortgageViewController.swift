@@ -8,7 +8,7 @@
 import UIKit
 
 class MortgageViewController: UIViewController {
-
+    
     // outlets
     @IBOutlet weak var loanAmountField: UITextField!
     @IBOutlet weak var interestField: UITextField!
@@ -19,18 +19,18 @@ class MortgageViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
     }
-
+    
     @IBAction func DidClickCalculate(_ sender: Any) {
         PreProcess()
         
     }
     
     override func viewWillAppear(_ animated: Bool) {
-       navigationController?.navigationBar.topItem!.title = NSLocalizedString("Mortgage", comment: "")
+        navigationController?.navigationBar.topItem!.title = NSLocalizedString("Mortgage", comment: "")
         
         // add clear all button
-       let clearItem = UIBarButtonItem(title: NSLocalizedString("Clear", comment: ""), style: .plain, target: self, action:#selector(clearMortgage(sender:)))
-       self.navigationController?.navigationBar.topItem!.rightBarButtonItem = clearItem
+        let clearItem = UIBarButtonItem(title: NSLocalizedString("Clear", comment: ""), style: .plain, target: self, action:#selector(clearMortgage(sender:)))
+        self.navigationController?.navigationBar.topItem!.rightBarButtonItem = clearItem
     }
     
     // custom methods
@@ -44,7 +44,7 @@ class MortgageViewController: UIViewController {
         clearEachValue(field: noOfYearsField)
         
         calcButton.layer.cornerRadius = 18
-
+        
     }
     
     func clearEachValue(field: UITextField)
@@ -58,7 +58,7 @@ class MortgageViewController: UIViewController {
     var payment : Double = 0;
     var noYears : Double = 0;
     var interestRate : Double = 0;
-        
+    
     let sharedFunctions = SharedFunctions()
     
     func calculatePayment(){

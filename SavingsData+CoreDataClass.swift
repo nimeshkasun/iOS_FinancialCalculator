@@ -10,7 +10,7 @@ import CoreData
 
 @objc(SavingsData)
 public class SavingsData: NSManagedObject {
-
+    
     convenience init(pv: Double, fv: Double, interest: Double, noOfPayments: Double, noOfCompounds: Double,payment: Double, pmtMadeAt: Int16, id:String, insertIntoManagedObjectContext context: NSManagedObjectContext!) {
         
         self.init(context: context)

@@ -33,7 +33,7 @@ class LoanViewController: UIViewController {
     var savingsData : SavingsData?
     var context: NSManagedObjectContext? {
         guard let appDelegate =
-        UIApplication.shared.delegate as? AppDelegate else {
+                UIApplication.shared.delegate as? AppDelegate else {
             return nil
         }
         return appDelegate.persistentContainer.viewContext
@@ -48,14 +48,14 @@ class LoanViewController: UIViewController {
         validate()
     }
     
-     override func viewWillAppear(_ animated: Bool) {
+    override func viewWillAppear(_ animated: Bool) {
         navigationController?.navigationBar.topItem!.title = NSLocalizedString("Loan", comment: "")
         
         // add clear all button
         let clearItem = UIBarButtonItem(title: NSLocalizedString("Clear", comment: ""), style: .plain, target: self, action:#selector(clearLoan(sender:)))
         self.navigationController?.navigationBar.topItem!.rightBarButtonItem = clearItem
     }
-
+    
     // custom methods
     
     // clear all text fields
@@ -69,7 +69,7 @@ class LoanViewController: UIViewController {
         clearEachValue(field: paymentField)
         
         calcButton.layer.cornerRadius = 18
-
+        
     }
     
     func clearEachValue(field: UITextField)
@@ -90,7 +90,7 @@ class LoanViewController: UIViewController {
         initTextField(field: noOfCompoundsField, key: "SNoOfCompounds")
         
         calcButton.layer.cornerRadius = 18
-
+        
     }
     
     func initTextField(field: UITextField, key: String)
@@ -103,7 +103,7 @@ class LoanViewController: UIViewController {
         
         // on item change we store the data in userdefaults
         field.addTarget(self, action: #selector(textFieldDidChange(sender:)), for: .editingChanged)
-
+        
         // restore data from userdefaults
         field.text = defaults.string(forKey: key)
     }
@@ -118,10 +118,10 @@ class LoanViewController: UIViewController {
         noOfPayments = prepareEachValue(field: noOfPaymentsField)
         noOfCompounds = prepareEachValue(field: noOfCompoundsField)
     }
-
+    
     func prepareEachValue(field: UITextField) -> Double
     {
-
+        
         if let value = Double(field.text!) {
             field.tag = 1
             let formattedVal  = sharedFunctions.getFormattedAsDouble(value: value)
@@ -142,7 +142,7 @@ class LoanViewController: UIViewController {
         
         // store calculation method in a variable
         var functionToPerform : (() -> ())?
-
+        
         // we need to perform the calculation on empty field
         if(presentValField.tag == 0)
         {
@@ -180,11 +180,11 @@ class LoanViewController: UIViewController {
         else if(emptyTF.count == 1)
         {
             interestRate = interestRate/100 //0.50
-
+            
             //calculate future value based on PMT
             if(futureValue == 0)
             {
-               calculateFutureValue()
+                calculateFutureValue()
             }
             else
             {
@@ -213,13 +213,13 @@ class LoanViewController: UIViewController {
     // calculations
     
     func calculatePresentValue()
-     {
-         let a =  noOfCompounds * noOfPayments
-         let b =   1 + (interestRate/noOfCompounds)
-         presentValue = futureValue / pow(b,a)
-         presentValField.text = sharedFunctions.getFormattedAsString(value: presentValue)
-         presentValField.answerDetected()
-     }
+    {
+        let a =  noOfCompounds * noOfPayments
+        let b =   1 + (interestRate/noOfCompounds)
+        presentValue = futureValue / pow(b,a)
+        presentValField.text = sharedFunctions.getFormattedAsString(value: presentValue)
+        presentValField.answerDetected()
+    }
     
     func calculateInterest()
     {
@@ -260,16 +260,16 @@ class LoanViewController: UIViewController {
         paymentField.text = sharedFunctions.getFormattedAsString(value: payment)
         futureValField.text = sharedFunctions.getFormattedAsString(value: futureValue)
         futureValField.answerDetected()
-
+        
     }
     
-
+    
     func calculateFutureValueofSeriesEnd(a: Double, b: Double) -> Double
     {
         let answer: Double = payment * ((pow(b,a) - 1)/(interestRate/noOfCompounds))
         return answer
     }
-
+    
     func calculateFutureValueofSeriesBegining(a: Double, b: Double) -> Double
     {
         let answer: Double = calculateFutureValueofSeriesEnd(a: a, b: b) * b
@@ -286,7 +286,7 @@ class LoanViewController: UIViewController {
         
         let futureValueOfSeries: Double = futureValue - (pow(b,a) * presentValue)
         var finalAnswer: Double = 0
-
+        
         if(isPMTEnd)
         {
             finalAnswer = futureValueOfSeries / c
@@ -298,12 +298,12 @@ class LoanViewController: UIViewController {
         paymentField.text = sharedFunctions.getFormattedAsString(value: finalAnswer)
         paymentField.answerDetected()
     }
- 
+    
     func displayAlert()
     {
-         let alert = UIAlertController(title: "Alert", message: "Please leave one of the values blank to perform the calculation", preferredStyle: .alert)
-         alert.addAction(UIAlertAction(title: "OK", style: .default))
-         self.present(alert, animated: true, completion: nil)
+        let alert = UIAlertController(title: "Alert", message: "Please leave one of the values blank to perform the calculation", preferredStyle: .alert)
+        alert.addAction(UIAlertAction(title: "OK", style: .default))
+        self.present(alert, animated: true, completion: nil)
     }
     
     
@@ -315,17 +315,17 @@ class LoanViewController: UIViewController {
     // saving old calculations
     func storeCalculatedData()
     {
-
+        
         let id = String(NSDate().timeIntervalSince1970)
         
         _ = LoansData.init(pv: presentValue, fv: futureValue, interest: interestRate, noOfPayments: noOfPayments, noOfCompounds: noOfCompounds, payment: payment,id: id, insertIntoManagedObjectContext: self.context)
         
         do
         {
-                try self.context?.save()
+            try self.context?.save()
         }
         catch let error as NSError {
-                print("Could not save. \(error), \(error.userInfo)")
+            print("Could not save. \(error), \(error.userInfo)")
         }
     }
     
@@ -336,20 +336,20 @@ class LoanViewController: UIViewController {
         {
             let loansData = try self.context?.fetch(request) as! [LoansData]
             if(loansData.count > 0 ){
-            
-                loansData.forEach {loansDataObj in
                 
-                     print("--------------------------")
-                     print("Id",loansDataObj.id ?? "")
-                     print("Present Value",loansDataObj.presentValue)
-                     print("Future Value",loansDataObj.futureValue)
-                     print("Interest Value",loansDataObj.interest)
-                     print("Compunds perYear",loansDataObj.compundsPerYear)
-                     print("Payments PerYear",loansDataObj.paymentsPerYear)
-                     print("Payment",loansDataObj.payment)
+                loansData.forEach {loansDataObj in
+                    
+                    print("--------------------------")
+                    print("Id",loansDataObj.id ?? "")
+                    print("Present Value",loansDataObj.presentValue)
+                    print("Future Value",loansDataObj.futureValue)
+                    print("Interest Value",loansDataObj.interest)
+                    print("Compunds perYear",loansDataObj.compundsPerYear)
+                    print("Payments PerYear",loansDataObj.paymentsPerYear)
+                    print("Payment",loansDataObj.payment)
                 }
- 
-
+                
+                
             }
             else
             {
@@ -361,5 +361,5 @@ class LoanViewController: UIViewController {
             print("Error in fetching items")
         }
     }
-
+    
 }

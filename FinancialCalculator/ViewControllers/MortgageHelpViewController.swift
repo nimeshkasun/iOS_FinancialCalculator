@@ -8,7 +8,7 @@
 import UIKit
 
 class MortgageHelpViewController: UIViewController {
-
+    
     @IBOutlet weak var helpTitle: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -19,7 +19,7 @@ class MortgageHelpViewController: UIViewController {
     func setUpUI()
     {
         self.view.backgroundColor = UIColor.backgroundColor()
-
+        
     }
 }
 

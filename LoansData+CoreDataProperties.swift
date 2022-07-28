@@ -10,11 +10,11 @@ import CoreData
 
 
 extension LoansData {
-
+    
     @nonobjc public class func fetchRequest() -> NSFetchRequest<LoansData> {
         return NSFetchRequest<LoansData>(entityName: "LoansData")
     }
-
+    
     @NSManaged public var compundsPerYear: Double
     @NSManaged public var futureValue: Double
     @NSManaged public var id: String?
@@ -22,5 +22,5 @@ extension LoansData {
     @NSManaged public var payment: Double
     @NSManaged public var paymentsPerYear: Double
     @NSManaged public var presentValue: Double
-
+    
 }

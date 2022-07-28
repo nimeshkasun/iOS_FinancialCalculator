@@ -16,20 +16,20 @@ class ScrollViewController: UIViewController {
     // variables
     // set in TabBarController
     var selectedTabIndex = 0
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         setUpUI()
     }
     
     override func viewWillAppear(_ animated: Bool) {
-            subscribeToNotification(UIResponder.keyboardWillShowNotification, selector: #selector(keyboardWillShowOrHide))
-            subscribeToNotification(UIResponder.keyboardWillHideNotification, selector: #selector(keyboardWillShowOrHide))
+        subscribeToNotification(UIResponder.keyboardWillShowNotification, selector: #selector(keyboardWillShowOrHide))
+        subscribeToNotification(UIResponder.keyboardWillHideNotification, selector: #selector(keyboardWillShowOrHide))
     }
     
     override func viewWillDisappear(_ animated: Bool) {
-          super.viewWillDisappear(animated)
-          unsubscribeFromAllNotifications()
+        super.viewWillDisappear(animated)
+        unsubscribeFromAllNotifications()
     }
     
     // custom methods
@@ -116,5 +116,5 @@ private extension ScrollViewController {
             }, completion: nil)
         }
     }
-
+    
 }
